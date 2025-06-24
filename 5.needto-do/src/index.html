@@ -9,17 +9,56 @@
 </head>
 
 <body>
-    <header class="width-full px-8 py-4 flex justify-between md:px-20 md:py-5">
+    <!-- Header section begins here -->
+    <header class="w-full px-8 py-4 flex justify-between md:px-20 md:py-5">
         <div class="flex px-2.5">
             <img class="w-8 h-8  rounded-full" src="../images/logo.png" alt="NeedTO-DO logo">
             <h1 class="font-bold text-xl text-sky-900 px-2.5">NeedTO-DO</h1>
         </div>
-        <button class="bg-blue-500 text-white px-3 py-1 rounded-2xl shadow-xl/20 hover:bg-gray-600 hover:cursor-pointer md:font-semibold" id="toggleButton">Dark Mode</button>
+        <button
+            class="bg-blue-500 text-white px-3 py-1 rounded-2xl shadow-xl/20 hover:bg-gray-600 hover:cursor-pointer md:font-semibold"
+            id="toggleButton">Dark Mode</button>
     </header>
-    <div class="bg-sky-200 px-auto flex justify-center">
-        <h1>NeedTO-DO</h1>
-        <p>Manage all your todos in one place</p>
+    <!-- Header section ends here -->
+
+    <!-- Main section begins here -->
+    <div class="w-full px-auto justify-center">
+        <img class="w-full position-relative" src="../images/hero-light.png" alt="" srcset="">
+        <button onclick="window.location.href='./todo.html'"
+            class="position-absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white px-3 py-1 rounded-2xl shadow-xl/20 hover:bg-gray-600 hover:cursor-pointer">Create
+            To-Do Now</button>
     </div>
+
+    <section>
+        <div class="px-auto py-20 text-center">
+            <div id="user-input">
+                <input class="px-10 py-2 rounded-3xl shadow-xl md:px-30 lg:px-60" type="text" placeholder="Add your to-do here...">
+                <button
+                    class="bg-sky-800 text-white ml-2 px-6 py-2 rounded-3xl shadow-xl/20 hover:bg-gray-600 hover:cursor-pointer md:ml-2 lg:ml-8">Add</button>
+            </div>
+
+            <!-- <div class="my-2" id="list-container">
+                <div class="flex justify-center text-left font-semibold text-gray-600 py-2 border-blue-900 border-2 "
+                    id="list-container" id="all-lists">
+                    <ul class="flex justify-between py-2 px-20 rounded-3xl text-left border-amber-900 border-2">
+                        <li class="item">Finish Cooking</li>
+                        <button
+                            class="bg-red-600 text-white px-3 rounded-3xl shadow-xl/20 hover:bg-gray-600 hover:cursor-pointer">Delete</button>
+                    </ul>
+                </div>
+            </div> -->
+
+            <!-- <div class="text-left text-xl font-semibold text-gray-400 px-30 py-10 border-amber-900 border-2" id="list-container">
+                <ul>
+                    <li class="item">Finish Cooking</li>
+                    <li class="item">Buy Grocery</li>
+                    <li class="item">Read a book</li>
+                    <li class="item">Play games</li>
+                    <li class="item">Go for a walk</li>
+                </ul>
+            </div> -->
+        </div>
+    </section>
 
     <script src="./script.js"></script>
 </body>
